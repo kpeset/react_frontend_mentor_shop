@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  all: unset;
+}
+
+main {
+  display: flex;
+  max-width: 1000px;
+  margin: 4rem auto;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.right > h2 {
+  color: orange;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.right > h3 {
+  font-size: 2.4rem;
+}
+
+.right > p {
+  margin: 2rem 0;
+  color: gray;
+  line-height: 1.8rem;
+}
+
+.right > .price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right > .price > h3 {
+  background-color: rgb(255, 211, 129);
+  font-size: 0.8rem;
+  color: orange;
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
+}
+
+.right > h4 {
+  text-decoration: line-through;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.right > .basket {
+  display: flex;
+  gap: 1rem;
+}
+
+.right > .basket > .basket_manager {
+  display: flex;
+  width: 30%;
+  background-color: rgb(224, 224, 224);
+  border-radius: 8px;
+}
+
+.right > .basket > .basket_manager > button {
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 900;
+  color: orange;
+}
+
+.right > .basket > .basket_manager > p {
+  width: 50%;
+  text-align: center;
+  padding: 1rem 0;
+  cursor: default;
+  font-weight: 900;
+}
+
+.right > .basket > button {
+  background-color: orange;
+  width: 70%;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 900;
+  color: white;
+}
+
+.left > .thumbnail,
+.left > dialog > .thumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left > .thumbnail > img {
+  width: calc(100% / 4 - 1rem);
+}
+
+.left > img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.left img {
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.784);
+}
+
+dialog {
+  margin: auto auto;
+  padding: 2rem;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+
+dialog > img {
+  width: 40rem;
+}
+
+dialog > button {
+  cursor: pointer;
+  color: orange;
+  background-color: white;
+  padding: 2rem;
+}
+
+.left > dialog > .thumbnail {
+  gap: 1rem;
+}
